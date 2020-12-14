@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Udacity Project 4</h1>
+            <div class="">
+                Logo
+            </div>
+            <div class="">
+                navigation
+            </div>
+        </header>
+
+        <main>
+            <section>
+              <!-- on blur removed -->
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" placeholder="Please Enter Valid URL">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            </section>
+
+            <section>
+                <strong>Form Results:</strong>
+                <div id="results">
+                  <div id="confidence">Confidence </div>
+                  <div id="subjectivity">Subjectivity </div>
+                  <div id="irony">Irony </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>This Project Done By Drsaud</p>
+        </footer>
+        <script>
+          // To check if service workers is supported
+          if ('serviceWorker' in navigator) {
+            // To keep the page "load" performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+          }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+$font-stack: Arial Sans-serif;
+$primary-color: blue;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font: 100% $font-stack;
+    color: $primary-color;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    flex: 2;
+    margin: 15px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+section {
+    width: 100%;
+    padding: 15px;
+    max-width: 800px;
+    margin: 50px auto;
+}
